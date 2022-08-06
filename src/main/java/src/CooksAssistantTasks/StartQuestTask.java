@@ -335,6 +335,7 @@ public class StartQuestTask extends TaskNode {
         getWheat();
         getFlour();
         walkBackToKitchen();
+        completeQuest();
         return 1000000;
     }
 }
