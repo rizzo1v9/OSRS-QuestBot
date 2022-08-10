@@ -383,9 +383,9 @@ public class RomeoAndJulietTask extends TaskNode {
         talkToJuliet();
         talkToRomeo();
         talkToFatherLawrence();
+        getCadavaBerries();
         talkToRomeo2();
         talkToApothecary();
-        getCadavaBerries();
         talkToApothecary2();
         talkToJuliet2();
         finishQuest();
