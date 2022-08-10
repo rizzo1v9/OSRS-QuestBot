@@ -177,11 +177,6 @@ public class XMarksTheSpotTask extends TaskNode {
         if (veos != null) {
             if (veos.interact("Talk-to")) {
                 sleep(Calculations.random(2000, 3000));
-//                continueDialogue();
-//                MethodProvider.log("continued 1st");
-//                sleep(Calculations.random(2000,3000));
-//                chooseOption(2);
-//                MethodProvider.log("continued 2nd");
                 do {
                     continueDialogue();
                     sleep(Calculations.random(2000, 3000));
