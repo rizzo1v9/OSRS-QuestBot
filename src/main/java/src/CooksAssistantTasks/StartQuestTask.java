@@ -36,7 +36,7 @@ public class StartQuestTask extends TaskNode {
         COMPLETING_QUEST
 
     }
-    GroundItem egg = GroundItems.closest("Egg");
+
 
     gameState gs;
 
@@ -116,6 +116,7 @@ public class StartQuestTask extends TaskNode {
             MethodProvider.log("Walking to chicken coop");
         }
         while(gs.equals(gameState.GETTING_EGG) && !areas.ChickenCoop.contains(getLocalPlayer().getTile()));
+        GroundItem egg = GroundItems.closest("Egg");
         MethodProvider.log("Plz work getting egg XD");
         if (egg != null) {
             egg.interact("Take");
@@ -139,7 +140,7 @@ public class StartQuestTask extends TaskNode {
         if (cow != null && gs.equals(gameState.GETTING_MILK)) {
             if (cow.interact("Milk")) {
                 log("Milking");
-                sleep(1000, 2000);
+                sleep(5000, 8000);
             }
         }
         return 10000;
