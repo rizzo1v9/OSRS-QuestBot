@@ -9,5 +9,8 @@
         <module name="QuestBot" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="OSRS-QuestBot" target="18" />
+    </bytecodeTargetLevel>
   </component>
 </project>
